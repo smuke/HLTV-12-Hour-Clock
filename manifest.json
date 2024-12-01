@@ -3,6 +3,11 @@
     "name": "HLTV 12-Hour Clock",
     "description": "HLTV.org match times with 12-hour clock (AM/PM)",
     "version": "1.0.0",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "smuke@smuke.dev"
+        }
+    },
     "content_scripts": [
         {
             "matches": ["https://www.hltv.org/"],
