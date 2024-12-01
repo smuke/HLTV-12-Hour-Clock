@@ -5,7 +5,7 @@
 
 <img src="https://github.com/user-attachments/assets/c066e6b3-ec4f-4127-85e6-fd279f450e95" alt="Example match with 12-hour time" width="500px"/>
 
-## Install
+## Get Extension
 
 - <a href="#">PENDING REVIEW - Chrome Web Store</a>
   <br>
@@ -17,10 +17,18 @@
   <a href="https://addons.mozilla.org/en-US/firefox/addon/hltv-12-hour-clock/">
     <img src="https://github.com/user-attachments/assets/11cfca37-2372-4bdf-8980-18179b8b641a" alt="Available in Firefox Add-ons" width="200px"></img>
   </a>
-- Manually
-  - Download source zip, unzip into folder
-  - Go to `chrome://extensions`
-  - Enable developer mode
-  - Load unpacked, select the folder
+
+## Manual Install
+Chrome
+1. Download source zip, unzip into folder
+2. Go to `chrome://extensions`
+3. Enable developer mode
+4. Load unpacked, select the folder
+
+Firefox
+1. Download source zip, unzip into folder
+2. Go to `about:debugging#/runtime/this-firefox`
+3. Click `Load Temporary Add-on…`
+4. Select the folder
 
 Not affiliated with HLTV.org.
