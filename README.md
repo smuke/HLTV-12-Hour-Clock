@@ -1,13 +1,9 @@
-
-![icon128](https://github.com/user-attachments/assets/b95e02a4-5a40-4e10-adfc-e8439bf49203)
-
-# HLTV 12 Hour Clock
+# <img src="https://github.com/user-attachments/assets/b95e02a4-5a40-4e10-adfc-e8439bf49203" alt="Clock icon" width="30"></img> HLTV 12 Hour Clock
 
 - Have trouble reading the military time on HLTV.org? 😔
 - HLTV 12-Hour Clock will display match times with AM/PM.
 
 <img src="https://github.com/user-attachments/assets/c066e6b3-ec4f-4127-85e6-fd279f450e95" alt="Example match with 12-hour time" width="500"/>
-
 
 ## Install
 
