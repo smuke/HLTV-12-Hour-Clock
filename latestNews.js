@@ -12,6 +12,7 @@ document.querySelectorAll(".latestNewsMetaPosted").forEach(e => {
         e.innerText = `12:${mins} PM`;
     }
     else {
-        e.innerText = `${date} • ${hours}:${mins} AM`;
+        if (hours < 10) e.innerText = `${date} • ${hours.substring(1)}:${mins} AM`;
+        else e.innerText = `${date} • ${hours}:${mins} AM`;
     }
 });
