@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "HLTV 12 Hour Clock",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://www.hltv.org/"],
+            "js": ["todaysMatches.js"]
+        },
+        {
+            "matches": ["https://www.hltv.org/matches"],
+            "js": ["matches.js", "latestNews.js"]
+        },
+        {
+            "matches": ["https://www.hltv.org/events/*/matches"],
+            "js": ["matches.js"]
+        },
+        {
+            "matches": ["https://www.hltv.org/matches/*"],
+            "js": ["match.js"]
+        },
+        {
+            "matches": ["https://www.hltv.org/forums/threads/*"],
+            "js": ["thread.js"]
+        }
+    ]
+}
