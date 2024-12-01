@@ -8,6 +8,9 @@ document.querySelectorAll(".latestNewsMetaPosted").forEach(e => {
     else if (hours == 0) {
         e.innerText = `${date} • 12:${mins} AM`;
     }
+    else if (hours == 12) {
+        e.innerHTML = `12:${mins} PM`;
+    }
     else {
         e.innerText = `${date} • ${hours}:${mins} AM`;
     }

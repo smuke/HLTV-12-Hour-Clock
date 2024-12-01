@@ -8,6 +8,9 @@ document.querySelectorAll(".forum-bottombar .time").forEach(e => {
     else if (hours == 0) {
         e.innerText = `${date} 12:${mins} AM`;
     }
+    else if (hours == 12) {
+        e.innerHTML = `12:${mins} PM`;
+    }
     else {
         if (hours < 10) e.innerText = `${date} ${hours.substring(1)}:${mins} AM`;
         else e.innerText = `${date} ${hours}:${mins} AM`;
