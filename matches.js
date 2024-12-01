@@ -8,7 +8,7 @@ document.querySelectorAll(".guide-same-day-matches span").forEach(e => {
         e.innerText = `12:${mins}am`;
     }
     else if (hours == 12) {
-        e.innerHTML = `12:${mins}pm`;
+        e.innerText = `12:${mins}pm`;
     }
     else {
         e.innerText = `${hours}:${mins}am`;
@@ -35,7 +35,7 @@ document.querySelectorAll(".matchTime").forEach(e => {
         e.innerText = `12:${mins} AM`;
     }
     else if (hours == 12) {
-        e.innerHTML = `12:${mins} PM`;
+        e.innerText = `12:${mins} PM`;
     }
     else if (e.innerText != "LIVE") {
         if (hours < 10) e.innerText = `${hours.substring(1)}:${mins} AM`;
