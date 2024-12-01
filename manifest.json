@@ -1,6 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "HLTV 12 Hour Clock",
+    "name": "HLTV 12-Hour Clock",
+    "description": "HLTV.org match times with 12-hour clock (AM/PM)",
     "version": "1.0.0",
     "content_scripts": [
         {
@@ -23,5 +24,11 @@
             "matches": ["https://www.hltv.org/forums/threads/*"],
             "js": ["thread.js"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
 }
