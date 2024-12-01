@@ -11,7 +11,7 @@ document.querySelectorAll(".teambox .middleExtra").forEach(e => {
         e.innerText = `12:${mins} PM`;
     }
     else {
-        if (hours < 10) e.innerHTML = `${hours.substring(1).toString()}:${mins.toString()}\nAM`;
+        if (hours < 10) e.innerText = `${hours.substring(1).toString()}:${mins.toString()}\nAM`;
         else e.innerText = `${hours}:${mins} AM`;
     }
 });
