@@ -23,7 +23,7 @@
         },
         {
             "matches": ["https://www.hltv.org/matches/*"],
-            "js": ["match.js", "todaysMatches.js"]
+            "js": ["match.js", "todaysMatches.js", "thread.js"]
         },
         {
             "matches": ["https://www.hltv.org/forums/threads/*"],
