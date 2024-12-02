@@ -12,7 +12,7 @@
   <a href="#">
     <img src="https://developer.chrome.com/static/docs/webstore/branding/image/206x58-chrome-web-bcb82d15b2486.png" alt="Available in Chrome Web Store" width="200px"></img>
   </a>
-- <a href="https://addons.mozilla.org/en-US/firefox/addon/hltv-12-hour-clock/">PENDING REVIEW - Firefox Add-ons</a>
+- <a href="https://addons.mozilla.org/en-US/firefox/addon/hltv-12-hour-clock/">Firefox Add-ons</a>
   <br>
   <a href="https://addons.mozilla.org/en-US/firefox/addon/hltv-12-hour-clock/">
     <img src="https://github.com/user-attachments/assets/11cfca37-2372-4bdf-8980-18179b8b641a" alt="Available in Firefox Add-ons" width="200px"></img>
