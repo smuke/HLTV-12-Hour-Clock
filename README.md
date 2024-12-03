@@ -7,9 +7,9 @@
 
 ## Get Extension
 
-- <a href="#">PENDING REVIEW - Chrome Web Store</a>
+- <a href="https://chromewebstore.google.com/detail/hltv-12-hour-clock/nmlcpbffolmhamkioidhkgcfcmppaefj">PENDING REVIEW - Chrome Web Store</a>
   <br>
-  <a href="#">
+  <a href="https://chromewebstore.google.com/detail/hltv-12-hour-clock/nmlcpbffolmhamkioidhkgcfcmppaefj">
     <img src="https://developer.chrome.com/static/docs/webstore/branding/image/206x58-chrome-web-bcb82d15b2486.png" alt="Available in Chrome Web Store" width="200px"></img>
   </a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/hltv-12-hour-clock/">Firefox Add-ons</a>
