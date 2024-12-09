@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "HLTV 12-Hour Clock",
     "description": "HLTV.org match times with 12-hour clock (AM/PM)",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "browser_specific_settings": {
         "gecko": {
             "id": "smuke@smuke.dev"
