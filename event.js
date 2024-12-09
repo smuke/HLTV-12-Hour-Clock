@@ -1,6 +1,7 @@
-function updateMatchTime() {
-    document.querySelectorAll(".timeAndEvent .time").forEach(e => {
+function updateEventPlayoffTimes() {
+    document.querySelectorAll(".time-time").forEach(e => {
         const [hours, mins] = e.innerText.split(":");
+        console.log(hours, mins);
 
         if (hours > 12) {
             e.innerText = `${hours - 12}:${mins} PM`;
@@ -18,16 +19,15 @@ function updateMatchTime() {
     });
 }
 
-
-const matchObserver = new MutationObserver((mutations, observer) => {
+const eventObserver = new MutationObserver((mutations, observer) => {
     const targetText = mutations[0].target.textContent.toLowerCase();
     if (targetText.includes("am") || targetText.includes("pm")) {
         observer.disconnect();
         return;
     }
     
-    updateMatchTime();
+    updateEventPlayoffTimes();
 });
 
-updateMatchTime();
-matchObserver.observe(document.querySelector(".timeAndEvent .time"), { childList: true });
+updateEventPlayoffTimes();
+eventObserver.observe(document.querySelector(".time-time"), { childList: true });

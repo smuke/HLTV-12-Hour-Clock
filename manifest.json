@@ -22,6 +22,10 @@
             "js": ["matches.js"]
         },
         {
+            "matches": ["https://www.hltv.org/events/*"],
+            "js": ["event.js"]
+        },
+        {
             "matches": ["https://www.hltv.org/matches/*"],
             "js": ["match.js", "todaysMatches.js", "thread.js"]
         },
