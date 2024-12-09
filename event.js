@@ -19,7 +19,7 @@ function updateEventPlayoffTimes() {
     });
 }
 
-const matchObserver = new MutationObserver((mutations, observer) => {
+const eventObserver = new MutationObserver((mutations, observer) => {
     const targetText = mutations[0].target.textContent.toLowerCase();
     if (targetText.includes("am") || targetText.includes("pm")) {
         observer.disconnect();
@@ -30,4 +30,4 @@ const matchObserver = new MutationObserver((mutations, observer) => {
 });
 
 updateEventPlayoffTimes();
-matchObserver.observe(document.querySelector(".time-time"), { childList: true });
+eventObserver.observe(document.querySelector(".time-time"), { childList: true });
