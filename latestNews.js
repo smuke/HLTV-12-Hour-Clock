@@ -30,4 +30,6 @@ const latestNewsObserver = new MutationObserver((mutations, observer) => {
 });
 
 updateLatestNewsTime();
-latestNewsObserver.observe(document.querySelector(".latestNewsMetaPosted"), { childList: true });
+if (document.querySelector(".latestNewsMetaPosted")) {
+    latestNewsObserver.observe(document.querySelector(".latestNewsMetaPosted"), { childList: true });
+}

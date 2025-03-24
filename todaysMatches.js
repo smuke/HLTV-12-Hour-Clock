@@ -29,4 +29,6 @@ const todaysMatchesObserver = new MutationObserver((mutations, observer) => {
 });
 
 updateTodaysMatchesTime();
-todaysMatchesObserver.observe(document.querySelector(".teambox .middleExtra"), { childList: true });
+if (document.querySelector(".teambox .middleExtra")) {
+    todaysMatchesObserver.observe(document.querySelector(".teambox .middleExtra"), { childList: true });
+}

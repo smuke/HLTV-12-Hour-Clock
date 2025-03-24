@@ -31,4 +31,6 @@ const threadObserver = new MutationObserver((mutations, observer) => {
 });
 
 updateThreadTime();
-threadObserver.observe(document.querySelector(".forum-bottombar .time"), { childList: true });
+if (document.querySelector(".forum-bottombar .time")) {
+    threadObserver.observe(document.querySelector(".forum-bottombar .time"), { childList: true });
+}

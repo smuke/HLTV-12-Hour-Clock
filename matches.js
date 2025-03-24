@@ -70,4 +70,7 @@ const matchesObserver = new MutationObserver((mutations, observer) => {
 
 updateMatchesTime();
 updateMatchesStyles();
-matchesObserver.observe(document.querySelector(".match-time"), { childList: true });
+
+if (document.querySelector(".match-time")) {
+    matchesObserver.observe(document.querySelector(".match-time"), { childList: true });
+}

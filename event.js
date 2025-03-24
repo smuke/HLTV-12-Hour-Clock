@@ -30,4 +30,6 @@ const eventObserver = new MutationObserver((mutations, observer) => {
 });
 
 updateEventPlayoffTimes();
-eventObserver.observe(document.querySelector(".time-time"), { childList: true });
+if (document.querySelector(".time-time")) {
+    eventObserver.observe(document.querySelector(".time-time"), { childList: true });
+}

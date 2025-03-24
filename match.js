@@ -30,4 +30,6 @@ const matchObserver = new MutationObserver((mutations, observer) => {
 });
 
 updateMatchTime();
-matchObserver.observe(document.querySelector(".timeAndEvent .time"), { childList: true });
+if (document.querySelector(".timeAndEvent .time")) {
+    matchObserver.observe(document.querySelector(".timeAndEvent .time"), { childList: true });
+}
