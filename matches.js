@@ -16,7 +16,7 @@ function updateMatchesTime() {
         }
     });
     
-    document.querySelectorAll(".matchTime").forEach(e => {
+    document.querySelectorAll(".match-time").forEach(e => {
         const [hours, mins] = e.innerText.split(":");
     
         if (hours > 12) {
@@ -36,14 +36,24 @@ function updateMatchesTime() {
 }
 
 function updateMatchesStyles() {
-    document.querySelectorAll(".toggle-match-notifications-button").forEach(e => {
-        e.style.marginLeft = "-5px";
-        e.style.marginRight = "5px";
+    document.querySelectorAll(".matches-v4 .match-info").forEach(e => {
+        e.style.flex = "0 0 70px";
+    });
+
+    document.querySelectorAll(".matches-v4 .match-rating").forEach(e => {
+        e.style.left = "10px";
     });
     
-    document.querySelectorAll(".matchInfo").forEach(e => {
-        e.style.flex = "0 0 55px";
-        e.style.textAlign = "center";
+    document.querySelectorAll("a.match-info").forEach(e => {
+        e.style.alignItems = "center";
+    });
+    
+    document.querySelectorAll(".match-wrapper").forEach(e => {
+        e.style.paddingLeft = "0";
+    });
+
+    document.querySelectorAll(".match-event.text-ellipsis").forEach(e => {
+        e.style.marginLeft = "10px";
     });
 }
 
@@ -60,4 +70,4 @@ const matchesObserver = new MutationObserver((mutations, observer) => {
 
 updateMatchesTime();
 updateMatchesStyles();
-matchesObserver.observe(document.querySelector(".matchTime"), { childList: true });
+matchesObserver.observe(document.querySelector(".match-time"), { childList: true });
